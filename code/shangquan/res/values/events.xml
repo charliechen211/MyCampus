@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="add_sh_item">1</integer>
+    <integer name="add_lv_item">2</integer>
+    <integer name="modify_personal_setting">3</integer>
+    <integer name="common_search">4</integer>
+    <integer name="add_interactivity">5</integer>
+    <integer name="add_parttime">6</integer>
+</resources>

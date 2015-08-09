@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MerchantDetailActivity">
+
+    <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+        <Button
+                android:id="@+id/collectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="收藏"
+                android:background="@drawable/button_bar_selector"/>
+
+        <Button
+                android:id="@+id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="分享"
+                android:background="@drawable/button_bar_selector"/>
+
+        <Button
+                android:id="@+id/commentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="评论"
+                android:background="@drawable/button_bar_selector"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/merchantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ImageView
+            android:id="@+id/merchantPicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/merchantName"
+            android:layout_below="@+id/merchantName"
+            />
+    <!--android:src="@drawable/kfc_1"-->
+    <TextView
+            android:id="@+id/merchantTab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/merchantPicture"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            />
+
+    <TextView
+            android:id="@+id/merchantTab_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/merchantTab_1"
+            android:layout_alignBottom="@+id/merchantTab_1"
+            android:layout_toRightOf="@+id/merchantTab_1"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <TextView
+            android:id="@+id/merchantTab_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/merchantTab_2"
+            android:layout_alignBottom="@+id/merchantTab_2"
+            android:layout_toRightOf="@+id/merchantTab_2"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <TextView
+            android:id="@+id/merchantAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/merchantPicture"
+            android:layout_toRightOf="@+id/merchantPicture"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+            android:id="@+id/merchantTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/merchantAddress"
+            android:layout_toRightOf="@+id/merchantPicture"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <RatingBar
+            android:id="@+id/merchantRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/merchantTelephone"
+            android:layout_toRightOf="@+id/merchantAverage"
+            android:layout_alignBottom="@id/merchantAverage"
+            android:rating="0"/>
+
+    <TextView
+            android:id="@+id/merchantAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/merchantPicture"
+            android:layout_below="@+id/merchantTelephone"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+            android:id="@+id/recommend_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/merchantTab_1"
+            android:layout_marginTop="10dp"
+            android:text="推荐列表"
+            android:layout_alignLeft="@id/merchantName"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ListView
+            android:id="@+id/merchant_recommend_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:dividerHeight="8px"
+            android:layout_below="@+id/recommend_list_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp">
+
+    </ListView>
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progress"
+            android:visibility="invisible"/>
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="去点菜"-->
+    <!--android:id="@+id/deal_button"-->
+    <!--android:layout_alignBottom="@+id/recommend_list_text"-->
+    <!--android:layout_alignRight="@+id/merchant_recommend_items"/>-->
+
+</RelativeLayout>

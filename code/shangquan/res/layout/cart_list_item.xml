@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:padding="10dp">
+
+    <ImageView
+            android:id="@+id/itemPicture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="全家桶"
+            android:id="@+id/name"
+            android:layout_alignTop="@+id/itemPicture"
+            android:layout_toRightOf="@+id/itemPicture"
+            android:layout_marginLeft="10dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="人均30元"
+            android:id="@+id/consume"
+            android:layout_below="@id/name"
+            android:layout_marginTop="3dp"
+            android:layout_alignLeft="@+id/name"/>
+
+    <TextView
+            android:id="@+id/textTab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/consume"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/name"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <TextView
+            android:id="@+id/textTab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textTab1"
+            android:layout_alignBottom="@+id/textTab1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textTab1"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <TextView
+            android:id="@+id/textTab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textTab2"
+            android:layout_alignBottom="@+id/textTab2"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textTab2"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <Button
+            android:id="@+id/minus_button"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="-"
+            android:gravity="center"
+            android:layout_alignTop="@+id/add_button"
+            android:layout_toLeftOf="@+id/number_of_item"
+            android:background="@drawable/button_selector"/>
+
+    <TextView
+            android:id="@+id/number_of_item"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_alignTop="@+id/add_button"
+            android:layout_toLeftOf="@+id/add_button"
+            android:background="@drawable/edit_text_box_one"/>
+
+    <Button
+            android:id="@+id/add_button"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="+"
+            android:gravity="center"
+            android:background="@drawable/button_selector"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

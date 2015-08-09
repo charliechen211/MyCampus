@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/add_comment_dialog">
+
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:id="@+id/commentsWrite"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:hint="请输入评论"
+            android:background="@drawable/setbar_bg"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/consumeText"
+            android:layout_below="@+id/commentsWrite"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="人均消费"
+            android:layout_alignParentLeft="true"
+            android:textSize="20dp"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/consumeDetail"
+            android:layout_below="@id/commentsWrite"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/consumeText"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入人均消费"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/service"
+            android:layout_below="@+id/consumeText"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:text="服务"
+            android:layout_alignParentLeft="true"
+            android:textSize="20dp"/>
+
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar1"
+            android:layout_alignBottom="@id/service"
+            android:layout_toRightOf="@id/service"
+            android:numStars="5"
+            android:rating="0"
+            android:layout_below="@+id/consumeText"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taste"
+            android:layout_below="@+id/service"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:text="口味"
+            android:layout_alignParentLeft="true"
+            android:textSize="20dp"/>
+
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar2"
+            android:layout_alignBottom="@id/taste"
+            android:layout_toRightOf="@id/taste"
+            android:numStars="5"
+            android:rating="0"
+            android:layout_below="@+id/service"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/environ"
+            android:layout_below="@+id/taste"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:text="环境"
+            android:layout_alignParentLeft="true"
+            android:textSize="20dp"/>
+
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar3"
+            android:layout_alignBottom="@id/environ"
+            android:layout_toRightOf="@id/environ"
+            android:numStars="5"
+            android:rating="0"
+            android:layout_below="@+id/taste"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+    <EditText
+            android:id="@+id/tagsWrite"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/environ"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/setbar_bg"
+            android:hint="请打标签"/>
+
+    <Button
+            android:id="@+id/addTagButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagsWrite"
+            android:layout_marginLeft="5dp"
+            android:text="+"
+            android:src="@drawable/ic_expand"/>
+
+</RelativeLayout>

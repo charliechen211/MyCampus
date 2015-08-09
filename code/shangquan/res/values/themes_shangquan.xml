@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.ShangQuan" parent="android:Theme.Holo.Light">
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:colorBackground">@color/window_background</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:editTextBackground">@drawable/shangquan_edit_text_holo_light</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewShangQuan</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/shangquan_btn_check_holo_light</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/shangquan_btn_radio_holo_light</item>
+        <item name="android:buttonStyle">@style/ButtonShangQuan</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonShangQuan</item>
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerShangQuan</item>
+
+        <!-- item name="android:tabWidgetStyle">@style/TabWidgetShangQuan</item -->
+
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarShangQuan</item>
+        <item name="android:seekBarStyle">@style/SeekBarShangQuan</item>
+        <item name="android:ratingBarStyle">@style/RatingBarShangQuan</item>
+        <item name="android:ratingBarStyleIndicator">@style/RatingBarBigShangQuan</item>
+        <item name="android:ratingBarStyleSmall">@style/RatingBarSmallShangQuan</item>
+        <item name="android:buttonStyleToggle">@style/ToggleShangQuan</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/shangquan_list_selector_holo_light</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/shangquan_activated_background_holo_light</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/shangquan_fastscroll_thumb_holo</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_shangquan</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Shangquan</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Shangquan</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Shangquan</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Shangquan</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Shangquan</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_shangquan</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_shangquan</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Shangquan</item>
+    </style>
+
+</resources>

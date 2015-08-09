@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_shangquan" default="compile.module.shangquan">
+    <dirname property="module.shangquan.basedir" file="${ant.file.module_shangquan}"/>
+
+    <property name="module.jdk.home.shangquan" value="${jdk.home.android_sdk}"/>
+    <property name="module.jdk.bin.shangquan" value="${jdk.bin.android_sdk}"/>
+    <property name="module.jdk.classpath.shangquan" value="jdk.classpath.android_sdk"/>
+
+    <property name="compiler.args.shangquan" value="${compiler.args}"/>
+
+    <property name="shangquan.output.dir" value="${module.shangquan.basedir}/bin/classes"/>
+    <property name="shangquan.testoutput.dir" value="${module.shangquan.basedir}/bin/classes"/>
+
+    <path id="shangquan.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="shangquan.module.production.classpath">
+        <path refid="${module.jdk.classpath.shangquan}"/>
+    </path>
+
+    <path id="shangquan.runtime.production.module.classpath">
+        <pathelement location="${shangquan.output.dir}"/>
+    </path>
+
+    <path id="shangquan.module.classpath">
+        <path refid="${module.jdk.classpath.shangquan}"/>
+        <pathelement location="${shangquan.output.dir}"/>
+    </path>
+
+    <path id="shangquan.runtime.module.classpath">
+        <pathelement location="${shangquan.output.dir}"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.shangquan">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.shangquan">
+        <patternset refid="compiler.excluded"/>
+        <patternset refid="excluded.from.module.shangquan"/>
+    </patternset>
+
+    <path id="shangquan.module.sourcepath">
+        <dirset dir="${module.shangquan.basedir}">
+            <include name="src"/>
+            <include name="gen"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.shangquan" depends="compile.module.shangquan.production,compile.module.shangquan.tests"
+            description="Compile module ShangQuan"/>
+
+    <target name="compile.module.shangquan.production" depends="register.custom.compilers"
+            description="Compile module ShangQuan; production classes">
+        <mkdir dir="${shangquan.output.dir}"/>
+        <javac2 destdir="${shangquan.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+                memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.shangquan}/javac">
+            <compilerarg line="${compiler.args.shangquan}"/>
+            <bootclasspath refid="shangquan.module.bootclasspath"/>
+            <classpath refid="shangquan.module.production.classpath"/>
+            <src refid="shangquan.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.shangquan"/>
+        </javac2>
+
+        <copy todir="${shangquan.output.dir}">
+            <fileset dir="${module.shangquan.basedir}/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+                <patternset refid="excluded.from.compilation.shangquan"/>
+            </fileset>
+            <fileset dir="${module.shangquan.basedir}/gen">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+                <patternset refid="excluded.from.compilation.shangquan"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="compile.module.shangquan.tests"
+            depends="register.custom.compilers,compile.module.shangquan.production"
+            description="compile module ShangQuan; test classes" unless="skip.tests"/>
+
+    <target name="clean.module.shangquan" description="cleanup module">
+        <delete dir="${shangquan.output.dir}"/>
+        <delete dir="${shangquan.testoutput.dir}"/>
+    </target>
+</project>

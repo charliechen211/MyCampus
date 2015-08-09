@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/itemPicture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="全家桶"
+            android:id="@+id/name"
+            android:layout_alignTop="@+id/itemPicture"
+            android:layout_toRightOf="@+id/itemPicture"
+            android:layout_marginLeft="10dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_below="@id/name"
+            android:layout_marginTop="3dp"
+            android:text="人均30元"
+            android:id="@+id/consume"
+            android:layout_alignLeft="@+id/name"/>
+
+    <TextView
+            android:id="@+id/textTab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/consume"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/name"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <TextView
+            android:id="@+id/textTab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textTab1"
+            android:layout_alignBottom="@+id/textTab1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textTab1"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <TextView
+            android:id="@+id/textTab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textTab2"
+            android:layout_alignBottom="@+id/textTab2"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textTab2"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2013-1-4"
+            android:id="@+id/time"
+            android:layout_marginRight="20dp"
+            android:layout_alignBottom="@+id/name"
+            android:layout_alignParentRight="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1份"
+            android:id="@+id/number"
+            android:layout_alignTop="@+id/consume"
+            android:layout_alignRight="@id/time"
+            android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

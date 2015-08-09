@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_box_one">
+
+    <ImageView
+            android:id="@+id/merchant_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+    <TextView
+            android:id="@+id/merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/merchant_image"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/merchant_image"
+            android:text="半价桶"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <RatingBar
+            android:id="@+id/ratingBar1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/merchant_name"
+            android:layout_below="@+id/merchant_name"
+            android:layout_marginTop="3dp"
+            android:rating="4"/>
+
+    <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/merchant_name"
+            android:layout_alignBottom="@+id/merchant_name"
+            android:layout_toRightOf="@+id/merchant_name"
+            android:layout_marginLeft="10dp"
+            android:text="50元"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+            android:id="@+id/merchantTab_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/merchant_image"
+            android:layout_alignBottom="@+id/merchant_image"
+            android:layout_toRightOf="@+id/merchant_image"
+            android:layout_marginLeft="0dp"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:text="朋友聚餐"/>
+
+    <TextView
+            android:id="@+id/merchantTab_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/merchantTab_2"
+            android:layout_alignBottom="@+id/merchantTab_2"
+            android:layout_toRightOf="@+id/merchantTab_2"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:text="贵死了"/>
+
+    <TextView
+            android:id="@+id/merchantTab_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/merchantTab_3"
+            android:layout_toRightOf="@+id/merchantTab_3"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:text="半价桶"/>
+
+</RelativeLayout>

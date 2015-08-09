@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/merchant_image"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/kfc_1"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="肯德基"
+            android:id="@+id/merchant_name"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/merchant_image"
+            android:layout_toRightOf="@+id/merchant_image"/>
+
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/merchant_name"
+            android:layout_toRightOf="@+id/merchant_name"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="人均50元"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/averageCost"
+            android:layout_below="@+id/merchant_name"
+            android:layout_toRightOf="@+id/merchant_image"/>
+
+    <TextView
+            android:id="@+id/collection_Tab_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:text="呵呵"
+            android:layout_alignTop="@+id/collection_Tab_1"
+            android:layout_toRightOf="@+id/collection_Tab_1"/>
+
+    <TextView
+            android:id="@+id/collection_Tab_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:layout_marginLeft="10dp"
+            android:text="贵死了"
+            android:layout_alignTop="@+id/collection_Tab_2"
+            android:layout_toRightOf="@+id/collection_Tab_2"/>
+
+    <TextView
+            android:id="@+id/collection_Tab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text="随便吃吃"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:layout_below="@+id/averageCost"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/merchant_image"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="优惠活动"
+            android:id="@+id/discountIntroduction"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/merchant_image"
+            android:layout_alignLeft="@+id/merchant_image"/>
+
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/merchantQecodeView"
+            android:layout_below="@+id/discountIntroduction"
+            android:layout_alignLeft="@+id/discountIntroduction"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:dividerHeight="10px"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"/>
+
+    <TableLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                    android:id="@+id/goMerchantButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/button_bar_selector"
+                    android:text="去店铺"/>
+
+            <Button
+                    android:id="@+id/collectButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/button_bar_selector"
+                    android:text="收藏"/>
+
+            <Button
+                    android:id="@+id/moreDiscountButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/button_bar_selector"
+                    android:text="更多优惠"/>
+        </TableRow>
+    </TableLayout>
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progress"
+            android:visibility="invisible"/>
+
+</RelativeLayout>

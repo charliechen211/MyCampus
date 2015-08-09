@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="detail_merchant_head">http://124.74.19.154:38800/BusinessCircle/merchant/fetchMerchantBean.json</string>
+    <string name="itemlist_merchant_head">http://124.74.19.154:38800/BusinessCircle/item/getItemsByMerchantId.json</string>
+    <string name="detail_item_head">http://124.74.19.154:38800/BusinessCircle/item/getItemByItemId.json</string>
+    <string name="register_head">http://124.74.19.154:38800/BusinessCircle/user/register.json</string>
+    <string name="login_head">http://124.74.19.154:38800/BusinessCircle/user/login.json</string>
+    <string name="around_share_head">http://124.74.19.154:38800/BusinessCircle/circleDynamic/fetchCircleDynamic.json</string>
+    <string name="friend_share_head">http://124.74.19.154:38800/BusinessCircle/circleDynamic/fetchFriendDynamic.json</string>
+
+    <!--modify-->
+    <string name="search_head">http://124.74.19.154:38800/BusinessCircle/merchant/searchMerchant.json</string>
+    <string name="search_all_head">http://124.74.19.154:38800/BusinessCircle/merchant/fetchMerchantBeans.json</string>
+    <!--modify-->
+
+    <string name="search_by_distance_head">http://124.74.19.154:38800/BusinessCircle/merchant/searchBasedLocation.json</string>
+    <string name="first_search_url">http://124.74.19.154:38800/BusinessCircle/search/firstSearch.json</string>
+    <string name="second_search_url">http://124.74.19.154:38800/BusinessCircle/search/secondSearch.json</string>
+
+    <string name="share_head">http://124.74.19.154:38800/BusinessCircle/circleDynamic/addCircleDynamic.json</string>
+    <!--<string name="add_comment_head">http://124.74.19.154:38800/BusinessCircle/comment/addComments.json</string>-->
+    <!--<string name="collect_head">http://124.74.19.154:38800/BusinessCircle/collection/addCollection.json</string>-->
+    <string name="collectlist_head">http://124.74.19.154:38800/BusinessCircle/collection/fetchCollection.json</string>
+    <string name="commentlist_head">http://124.74.19.154:38800/BusinessCircle/comment/fetchComments.json</string>
+
+    <!--sjtu-->
+    <!--<string name="search_sjtu_head">http://192.168.0.121:8080/BusinessCircle/merchant/searchSJTUMerchant.json</string>-->
+    <!--<string name="search_all_sjtu_head">http://192.168.0.121:8080/BusinessCircle/merchant/fetchSJTUMerchantBeans.json</string>-->
+
+    <!--<string name="circle_dynamic_list_head">http://124.74.19.154:38800/BusinessCircle/circleDynamic/fetchCircleDynamic.json</string>-->
+
+    <string name="my_share_head">http://124.74.19.154:38800/BusinessCircle/circleDynamic/fetchMysharing.json</string>
+
+    <!--friend-->
+    <string name="follow_list_head">http://124.74.19.154:38800/BusinessCircle/user/fetchFriends.json</string>
+    <string name="fan_list_head">http://124.74.19.154:38800/BusinessCircle/user/getMyFans.json</string>
+    <string name="friend_recommend_list_head">http://124.74.19.154:38800/BusinessCircle/user/getRecommendFriendBeans.json</string>
+    <string name="detail_user_head">http://124.74.19.154:38800/BusinessCircle/user/fetchUserBean.json</string>
+    <string name="add_friend_head">http://124.74.19.154:38800/BusinessCircle/user/addFriend.json</string>
+    <string name="cancel_friend_head">http://124.74.19.154:38800/BusinessCircle/user/deleteFriend.json</string>
+    <string name="search_friend_list_head">http://124.74.19.154:38800/BusinessCircle/merchant/searchUser.json</string>
+
+    <!-- 排队相关 -->
+    <string name="queue_info_head">http://124.74.19.154:38800/BusinessCircle/merchantTable/findByMerchantId.json</string>
+    <string name="queue_join_head">http://124.74.19.154:38800/BusinessCircle/queue/insertQueue.json</string>
+    <string name="queue_merchant_head">http://124.74.19.154:38800/BusinessCircle/queue/getMerchantQueue.json</string>
+    <string name="queue_user_head">http://124.74.19.154:38800/BusinessCircle/queue/getUserQueue.json</string>
+
+    <!--subscribe-->
+    <string name="subscribe_merchant_head">http://124.74.19.154:38800/BusinessCircle/subscription/manageSubscription.json</string>
+    <string name="subscribe_merchant_list_head">http://124.74.19.154:38800/BusinessCircle/adver/fetchSubscription.json</string>
+
+    <!--picture-->
+    <string name="shop_picture_head">http://124.74.19.154:38800/BusinessCircle/ShopUploadImages/</string>
+    <string name="school_picture_head">http://124.74.19.154:38800/BusinessCircle/SchoolAroundImages/</string>
+    <string name="item_picture_head">http://124.74.19.154:38800/BusinessCircle/ItemUploadImages/</string>
+    <string name="person_picture_head">http://124.74.19.154:38800/BusinessCircle/HeadImages/</string>
+    <string name="subscribe_picture_head">http://124.74.19.154:38800/BusinessCircle/AdverUploadImages/</string>
+    <string name="common_picture_head">http://124.74.19.154:38800/BusinessCircle/AppUploadImages/</string>
+
+    <!--cart & order-->
+    <string name="fetch_into_cart_head">http://124.74.19.154:38800/BusinessCircle/order/manageCart.json</string>
+    <string name="erase_cart_head"></string>
+    <string name="fetch_cart_list_head">http://124.74.19.154:38800/BusinessCircle/order/checkMyCart.json</string>
+    <string name="submit_cart_head">http://124.74.19.154:38800/BusinessCircle/order/placeOrder.json</string>
+    <string name="fetch_order_list_head">http://124.74.19.154:38800/BusinessCircle/order/checkMyOrders.json</string>
+
+    <!--tags-->
+    <string name="tags_rec_head">http://124.74.19.154:38800/BusinessCircle_recommender/recsys/recTagByUser.json</string>
+    <string name="tags_comment_head">http://124.74.19.154:38800/BusinessCircle_recommender/recsys/recTagByUserAndEntity.json</string>
+    <string name="get_tag_list">http://124.74.19.154:38800/BusinessCircle/user/getTagLib.json</string>
+
+    <!--school-region-->
+    <string name="get_school_list">http://124.74.19.154:38800/BusinessCircle/user/getSchoolsRegions.json</string>
+
+    <!--person setting-->
+    <string name="modify_userinfo_head">http://124.74.19.154:38800/BusinessCircle/user/modifyInfo.json</string>
+
+    <!--recommend-->
+    <string name="rec_merchant_head">http://124.74.19.154:38800/BusinessCircle_recommender/recsys/recMerchant.json</string>
+    <string name="rec_item_head">http://124.74.19.154:38800/BusinessCircle_recommender/recsys/recItem.json</string>
+    <!--<string name="hot_merchant_head">http://202.120.40.69:38800/BusinessCircle/recsys/recPopMerchant.json</string>-->
+    <!--<string name="hot_item_head">http://202.120.40.69:38800/BusinessCircle/recsys/recPopItem.json</string>-->
+
+    <string name="hot_merchant_head">http://124.74.19.154:38800/BusinessCircle_recommender/recsys/recMerchant.json</string>
+    <string name="hot_item_head">http://124.74.19.154:38800/BusinessCircle_recommender/recsys/recItem.json</string>
+
+    <!--campus nearby-->
+    <string name="fetch_item_list_head">http://124.74.19.154:38800/BusinessCircle/schoolarounditem/fetchItemList.json</string>
+    <string name="fetch_item_head">http://124.74.19.154:38800/BusinessCircle/schoolarounditem/fetchItem.json</string>
+
+    <!--collect-->
+    <string name="add_collect_head">http://124.74.19.154:38800/BusinessCircle/collection/addCollection.json</string>
+
+    <!--comment-->
+    <string name="add_comment_head">http://124.74.19.154:38800/BusinessCircle/comment/addComment.json</string>
+    <string name="fetch_comment_head">http://124.74.19.154:38800/BusinessCircle/comment/fetchComments.json</string>
+
+    <!--shlv-->
+    <string name="shlv_info_head">http://124.74.19.154:38800/BusinessCircle/shlvinfo/fetchInfos.json</string>
+    <string name="add_shlv_info_head">http://124.74.19.154:38800/BusinessCircle/shlvinfo/addInfo.json</string>
+
+    <!--circle-->
+    <string name="fetch_circle_head">http://124.74.19.154:38800/BusinessCircle/circle/fetchCircleInfos.json</string>
+
+    <!-- interaction wall -->
+    <string name="interaction_topic_head">http://124.74.19.154:38800/BusinessCircle/interaction/getList.json</string>
+    <string name="interaction_topicComment_head">http://124.74.19.154:38800/BusinessCircle/interactionReply/getReplyList.json</string>
+    <string name="interaction_addComment_head">http://124.74.19.154:38800/BusinessCircle/interactionReply/addReply.json</string>
+    <string name="interaction_postTopic_head">http://124.74.19.154:38800/BusinessCircle/interaction/addInteraction.json</string>
+    <!-- campus news-->
+    <string name="campus_news_list_head">http://124.74.19.154:38800/BusinessCircle/schoolnews/getList.json</string>
+    <string name="campus_news_content_head">http://124.74.19.154:38800/BusinessCircle/schoolnews/getContent.json</string>
+    <!-- part time jobs-->
+    <string name="part_time_job_list_head">http://124.74.19.154:38800/BusinessCircle/parttime/getList.json</string>
+    <string
+            name="part_time_job_detail_head">http://124.74.19.154:38800/BusinessCircle/parttime/getDetails.json</string>
+    <string name="part_time_add_job_head">http://124.74.19.154:38800/BusinessCircle/parttime/addjob.json</string>
+    <!-- Navigate-->
+    <string name="navigate_location_head">http://124.74.19.154:38800/BusinessCircle/location/fetchLocations.json</string>
+    <string name="dest_picture_head">http://124.74.19.154:38800/BusinessCircle/NavigateImages/</string>
+    <!-- Homepage-->
+    <string
+            name="homepage_collection_head">http://124.74.19.154:38800/BusinessCircle/collection/fetchCollection.json</string>
+    <string name="homepage_subscribe_head">http://124.74.19.154:38800/BusinessCircle/subscription/getFollowList.json</string>
+    <string name="module_name_picture_head">http://124.74.19.154:38800/BusinessCircle/ModuleName/</string>
+    <string name="homepage_recommend_head">http://124.74.19.154:38800/BusinessCircle/user/recommendInfos.json</string>
+    <string name="homepage_collectiond_del_head">http://124.74.19.154:38800/BusinessCircle/collection/delCollection
+        .json</string>
+</resources>

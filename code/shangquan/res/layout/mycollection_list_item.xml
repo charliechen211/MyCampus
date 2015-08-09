@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_box_one">
+
+    <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/merchant_image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="肯德基"
+            android:id="@+id/merchant_name"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/merchant_name"
+            android:layout_toRightOf="@+id/merchant_image"/>
+
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="4"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/merchant_name"
+            android:layout_toRightOf="@+id/merchant_image"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="人均50元"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_alignBottom="@id/merchant_image"
+            android:id="@+id/averageCost"
+            android:layout_below="@+id/ratingBar"
+            android:layout_toRightOf="@+id/merchant_image"/>
+
+    <TextView
+            android:id="@+id/collection_Tab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:text="随便吃吃"
+            android:layout_alignLeft="@+id/merchant_image"
+            android:layout_below="@+id/merchant_image"/>
+
+    <TextView
+            android:id="@+id/collection_Tab_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:layout_marginLeft="5dp"
+            android:text="朋友聚餐"
+            android:layout_alignTop="@+id/collection_Tab_1"
+            android:layout_toRightOf="@+id/collection_Tab_1"/>
+
+    <TextView
+            android:id="@+id/collection_Tab_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:layout_marginLeft="5dp"
+            android:text="贵死了"
+            android:layout_alignTop="@+id/collection_Tab_2"
+            android:layout_toRightOf="@+id/collection_Tab_2"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/collection_type"
+            android:text="菜"
+            android:background="@drawable/edit_text_box_one"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"/>
+
+</RelativeLayout>

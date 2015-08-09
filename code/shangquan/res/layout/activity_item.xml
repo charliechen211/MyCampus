@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_detail_background"
+                tools:context=".ItemDetailActivity">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/common_divider"
+            android:showDividers="middle"
+            android:dividerHeight="20px"
+            android:layout_margin="10dp">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp">
+
+            <ImageView
+                    android:scaleType="centerInside"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/itemPic"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemName"
+                    android:text="阿康烧烤"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:id="@+id/itemLocationFrame">
+
+            <ImageView
+                    android:scaleType="centerInside"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/itemLocationImage"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_location_icon"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemLocation"
+                    android:text="东川路800号"
+                    android:layout_toRightOf="@id/itemLocationImage"
+                    android:layout_marginLeft="25dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/title_fold"
+                    android:textSize="16dp"/>
+
+            <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_navigation_right"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_margin="15dp"
+                android:id="@+id/itemTelFrame">
+
+            <ImageView
+                    android:scaleType="centerInside"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/itemTelImage"
+                    android:src="@drawable/common_phone_icon"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemTel"
+                    android:layout_toRightOf="@id/itemTelImage"
+                    android:layout_centerVertical="true"
+                    android:text="34204265"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/title_fold"
+                    android:textSize="16dp"/>
+
+            <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_navigation_right"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+            <ImageView
+                    android:scaleType="centerInside"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/itemDescriptionImage"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/common_working_icon"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemPlus"
+                    android:layout_toRightOf="@id/itemDescriptionImage"
+                    android:layout_centerVertical="true"
+                    android:text="就是这个味"
+                    android:textColor="@color/title_fold"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="16dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progress"
+            android:visibility="invisible"/>
+
+</RelativeLayout>

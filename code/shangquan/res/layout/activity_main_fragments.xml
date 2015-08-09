@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+    <TabHost
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tabHost"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="0dp">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+            <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+            </TabWidget>
+
+            <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <fragment
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_recommend"
+                        android:name="com.stpi.campus.activity.homepage.HomepageFragment"
+                        tools:layout="@layout/activity_star_find"/>
+
+                <fragment
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_shmarket"
+                        android:name="com.stpi.campus.activity.shMarket.shInfoFragment"
+                        tools:layout="@layout/activity_main"/>
+
+                <fragment
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_lvbridge"
+                        android:name="com.stpi.campus.activity.lvBridge.lvInfoFragment"
+                        tools:layout="@layout/activity_main"/>
+
+                <fragment
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_setting"
+                        android:name="com.stpi.campus.activity.personSetting.SettingFragment"
+                        tools:layout="@layout/activity_main"/>
+
+                <fragment
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_friends"
+                        android:name="com.stpi.campus.activity.friend.FriendsFragment"
+                        tools:layout="@layout/activity_main"/>
+
+                <fragment
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_campusNearby"
+                        android:name="com.stpi.campus.activity.campusNearby.CampusNearbyFragment"
+                        tools:layout="@layout/activity_main"/>
+
+                <fragment
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_secret"
+                        android:name="com.stpi.campus.activity.interactiveWall.InteractiveFragment"
+                        tools:layout="@layout/activity_main"/>
+
+                <fragment
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_campusNews"
+                        android:name="com.stpi.campus.activity.campusNews.CampusNewsFragment"
+                        tools:layout="@layout/activity_main"/>
+
+                <fragment
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_partTimeJob"
+                        android:name="com.stpi.campus.activity.partTimeJob.PartTimeJobFragment"
+                        tools:layout="@layout/activity_main"/>
+
+                <fragment
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_navigate"
+                        android:name="com.stpi.campus.activity.Navigate.NavigateFragment"
+                        tools:layout="@layout/activity_main"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+
+</RelativeLayout>

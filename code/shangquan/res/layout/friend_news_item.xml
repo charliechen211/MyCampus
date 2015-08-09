@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="10dp"
+              android:background="@drawable/edit_text_box_one">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/friend_name"
+            android:textSize="25dp"
+            android:text="大哥"
+            android:textColor="@color/tsuyukusa"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:id="@+id/friend_news_content"
+            android:text="这个半价桶超好吃"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="250dp"
+            android:layout_margin="5dp"
+            android:id="@+id/friend_news_pic"
+            android:src="@drawable/kfcdish_1"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+        <!--<ImageButton-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:background="@drawable/target"-->
+        <!--android:id="@+id/share_button"-->
+        <!--android:layout_alignParentRight="true"/>-->
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/friend_news_time"
+                android:text="2014-12-01 9:00am"
+                android:layout_alignBottom="@+id/share_button"/>
+    </RelativeLayout>
+
+</LinearLayout>

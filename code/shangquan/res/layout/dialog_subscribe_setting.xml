@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#ffffffff"
+                android:orientation="horizontal"
+                android:id="@+id/subscribe_setting_dialog">
+    　　
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="订阅"
+            android:id="@+id/subscribeSetting"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="接收消息"
+            android:id="@+id/receiveSetting"
+            android:layout_below="@+id/subscribeSetting"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/subscribeSetting"/>
+
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:id="@+id/subscribeSwitch"
+            android:checked="false"
+            android:textOff="关"
+            android:textOn="开"
+            android:layout_alignTop="@+id/subscribeSetting"
+            android:layout_toRightOf="@id/subscribeSetting"
+            android:layout_marginLeft="100dp"/>
+
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:id="@+id/receiveSwitch"
+            android:checked="false"
+            android:textOff="关"
+            android:textOn="开"
+            android:layout_alignTop="@+id/receiveSetting"
+            android:layout_toRightOf="@id/receiveSetting"
+            android:layout_alignLeft="@+id/subscribeSwitch"/>
+
+</RelativeLayout>

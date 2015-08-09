@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="rec_merchant_head">http://202.120.40.69:38800/BusinessCircle/recsys/recMerchant.json</string>-->
+    <!--<string name="detail_merchant_head">http://202.120.40.69:38800/BusinessCircle/merchant/fetchMerchantBean.json</string>-->
+    <!--<string name="itemlist_merchant_head">http://202.120.40.69:38800/BusinessCircle/item/findMerchantItems.json</string>-->
+    <!--<string name="register_head">http://202.120.40.69:38800/BusinessCircle/register/register.json</string>-->
+    <!--<string name="login_head">http://202.120.40.69:38800/BusinessCircle/user/UserLogin.json</string>-->
+
+    <string name="register_head">http://192.168.0.121:8080/BusinessCircle/register/register.json</string>
+    <string name="login_head">http://192.168.0.121:8080/BusinessCircle/user/UserLogin.json</string>
+</resources>

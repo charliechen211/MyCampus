@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ItemDetailActivity">
+
+    <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+        <Button
+                android:id="@+id/collectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="收藏"
+                android:background="@drawable/button_bar_selector"/>
+
+        <Button
+                android:id="@+id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="分享"
+                android:background="@drawable/button_bar_selector"/>
+
+        <Button
+                android:id="@+id/commentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="评论"
+                android:background="@drawable/button_bar_selector"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <ImageView
+            android:id="@+id/itemPicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="10dp"
+            />
+    <!--android:src="@drawable/kfcdish_2"-->
+    <TextView
+            android:id="@+id/textTab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/itemPicture"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <TextView
+            android:id="@+id/textTab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textTab1"
+            android:layout_alignBottom="@+id/textTab1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textTab1"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <TextView
+            android:id="@+id/textTab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textTab2"
+            android:layout_alignBottom="@+id/textTab2"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textTab2"
+            android:text=""
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"/>
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textTab1"
+            android:layout_alignTop="@+id/itemPicture"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <RatingBar
+            android:id="@+id/ratingBar1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="10dp"
+            android:rating="0"/>
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/itemPicture"
+            android:layout_below="@+id/itemPicture"
+            android:layout_marginTop="10dp"
+            android:text="点评()"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <ListView
+            android:id="@+id/comments_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/control_background"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp">
+    </ListView>
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progress"
+            android:visibility="invisible"/>
+
+</RelativeLayout>

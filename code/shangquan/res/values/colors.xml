@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="notice_background">#00000000</color>
+    <!-- <color name="white">#ffffffff</color> -->
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="default_center_color">#ff7b90d2</color>
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="usuao">#91B493</color>
+    <color name="byakuroku">#A8D8B9</color>
+    <color name="byakugun">#78C2C4</color>
+    <color name="tsuyukusa">#2EA9DF</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#A0A0A0</color>
+    <color name="main_color">#FF4E48</color>
+    <!-- color name="main_color_light">#5a8700</color -->
+    <color name="main_color_light">#43b695</color>
+    <!-- color name="main_color_dark">#517803</color -->
+    <color name="main_color_dark">#43b695</color>
+    <color name="window_background">#ffededed</color>
+    <color name="control_background">#ffffff</color>
+    <color name="common_background1">#f0f0f0</color>
+    <color name="common_menu_background">#43b695</color>
+
+    <!--fold color-->
+    <color name="title_fold">#303030</color>
+    <color name="minor_fold">#808080</color>
+    <color name="not_choose_tab_fold">#959595</color>
+    <color name="choose_tab_fold">#01bcd4</color>
+    <color name="list_tab_fold">#4d4d4d</color>
+    <color name="divider_fold">#d4d4d4</color>
+    <color name="option_choose_fold">#6edbfe</color>
+
+    <!--background color-->
+    <drawable name="menu_navigation_background">#43b695</drawable>
+    <color name="common_detail_background">#fafafa</color>
+    <color name="common_background">#ececec</color>
+    <color name="left_bar_main_color">#455a64</color>
+    <color name="friend_main_color">#03a9f5</color>
+
+    <!--divider color-->
+    <color name="common_divider_color">#d4d4d4</color>
+
+    <!--card background color-->
+    <color name="card_background_color">#bbbbbb</color>
+
+    <!--button color-->
+    <color name="submit_btn_color">#7d7d7d</color>
+
+    <!--tag color-->
+    <color name="tag_color_1">#75e1fe</color>
+    <color name="tag_color_2">#f7ae11</color>
+    <color name="tag_color_3">#eeff41</color>
+    <color name="tag_color_4">#ff4891</color>
+    <color name="tag_color_5">#716bbe</color>
+    <color name="tag_color_6">#00bcd4</color>
+    <color name="tag_color_7">#c8da2b</color>
+    <color name="tag_color_8">#607d8b</color>
+
+    <!--actionbar background color-->
+    <color name="actionbar_homepage_color">#455a64</color>
+    <color name="actionbar_camppus_nearby_color">#6edbfe</color>
+    <color name="actionbar_shmarket_color">#99c83e</color>
+    <color name="actionbar_parttime_color">#607db8</color>
+    <color name="actionbar_campus_news_color">#00bcd4</color>
+    <color name="actionbar_navigation_color">#716bbe</color>
+    <color name="actionbar_lvbridge_color">#ff4892</color>
+    <color name="actionbar_interactivity_color">#ff7043</color>
+    <color name="actionbar_campus_activity_color">#3f51b5</color>
+    <color name="actionbar_friends_color">#03a9f5</color>
+    <color name="actionbar_setting_color">#7d7d7d</color>
+
+</resources>

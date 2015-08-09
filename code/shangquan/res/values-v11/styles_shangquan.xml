@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+
+<resources>
+
+    <style name="ActionBar.Solid.Shangquan" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+
+        <!-- item name="android:background">@drawable/ab_background_textured_shangquan</item -->
+        <item name="android:background">@color/common_menu_background</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_shangquan</item>
+        <!-- item name="android:backgroundSplit">@drawable/ab_background_textured_shangquan</item -->
+        <item name="android:backgroundSplit">@color/common_menu_background</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Shangquan</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Shangquan" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_shangquan</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Shangquan</item>
+    </style>
+
+    <style name="PopupMenu.Shangquan" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_shangquan</item>
+    </style>
+
+    <style name="DropDownListView.Shangquan" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_shangquan</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Shangquan" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_shangquan</item>
+    </style>
+
+    <style name="DropDownNav.Shangquan" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_shangquan</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_shangquan</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_shangquan</item>
+    </style>
+
+    <style name="ProgressBar.Shangquan" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_shangquan</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Shangquan" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_shangquan</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Shangquan.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Shangquan</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Shangquan</item>
+        <item name="android:editTextStyle">@drawable/shangquan_edit_text_holo_light</item>
+        <item name="android:buttonStyle">@drawable/shangquan_btn_default_holo_light</item>
+    </style>
+
+    <style name="EditTextShangQuan" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/shangquan_edit_text_holo_light</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="AutoCompleteTextViewShangQuan" parent="android:Widget.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/shangquan_list_selector_holo_light</item>
+        <item name="android:background">@drawable/shangquan_edit_text_holo_light</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="CheckBoxShangQuan" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/shangquan_btn_check_holo_light</item>
+    </style>
+
+    <style name="RadioButtonShangQuan" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/shangquan_btn_radio_holo_light</item>
+    </style>
+
+    <style name="ButtonShangQuan" parent="android:Widget.Button">
+        <item name="android:background">@drawable/shangquan_btn_default_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ImageButtonShangQuan" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/shangquan_btn_default_holo_light</item>
+    </style>
+
+    <style name="SpinnerShangQuan" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/shangquan_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/shangquan_list_selector_holo_light</item>
+    </style>
+
+    <style name="SpinnerDropDownItemShangQuan" parent="android:Widget.DropDownItem.Spinner">
+        <item name="android:checkMark">@drawable/shangquan_btn_radio_holo_light</item>
+    </style>
+
+    <style name="TabShangQuan">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:background">@drawable/shangquan_tab_indicator_holo</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="TabTextShangQuan">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <!-- v14 <item name="android:textAllCaps">true</item> -->
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:maxWidth">180dip</item>
+    </style>
+
+    <style name="ProgressBarShangQuan" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/shangquan_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/shangquan_progress_indeterminate_horizontal_holo_light
+        </item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="SeekBarShangQuan" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/shangquan_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/shangquan_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:thumb">@drawable/shangquan_scrubber_control_selector_holo_light</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+    <style name="RatingBarShangQuan" parent="android:Widget.Holo.Light.RatingBar">
+        <item name="android:progressDrawable">@drawable/shangquan_ratingbar_full_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/shangquan_ratingbar_full_holo_light</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="RatingBarBigShangQuan" parent="android:Widget.Holo.Light.RatingBar">
+        <item name="android:progressDrawable">@drawable/shangquan_ratingbar_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/shangquan_ratingbar_holo_light</item>
+        <item name="android:minHeight">30dip</item>
+        <item name="android:maxHeight">30dip</item>
+    </style>
+
+    <style name="RatingBarSmallShangQuan" parent="android:Widget.Holo.Light.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/shangquan_ratingbar_small_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/shangquan_ratingbar_small_holo_light</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="ToggleShangQuan" parent="android:Widget.Button.Toggle">
+        <item name="android:background">@drawable/shangquan_btn_toggle_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ListViewShangQuan" parent="android:Widget.ListView">
+        <item name="android:listSelector">@drawable/shangquan_list_selector_holo_light</item>
+    </style>
+
+    <style name="ListViewShangQuan.White" parent="android:Widget.ListView.White">
+        <item name="android:listSelector">@drawable/shangquan_list_selector_holo_light</item>
+    </style>
+
+    <style name="SpinnerItemShangQuan" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+</resources>

@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/activity_campus_nearby">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_detail_background"
+            android:scrollbars="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/card_background">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp">
+
+                    <ImageView
+                            android:id="@+id/button_traffic"
+                            android:layout_width="73dp"
+                            android:layout_height="92dp"
+                            android:scaleType="centerInside"
+                            android:clickable="false"
+                            android:orientation="vertical"
+                            android:src="@drawable/campus_nearby_traffic"/>
+
+                    <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="0,1"
+                            android:background="@color/control_background"
+                            android:layout_gravity="center_vertical">
+
+                        <TableRow>
+
+                            <LinearLayout
+                                    android:id="@+id/button_subway"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_right_bottom">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="地铁"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_bus"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_bottom"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="公交"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <LinearLayout
+                                    android:id="@+id/button_campus_bus"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_right"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="校园巴士"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_campus_turn_bus"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="跨学区校车"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/card_background">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp">
+
+                    <ImageView
+                            android:id="@+id/button_service"
+                            android:layout_width="73dp"
+                            android:layout_height="92dp"
+                            android:scaleType="centerInside"
+                            android:clickable="false"
+                            android:orientation="vertical"
+                            android:src="@drawable/campus_nearby_service"/>
+
+                    <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="0,1,2"
+                            android:background="@color/control_background"
+                            android:layout_gravity="center_vertical">
+
+                        <TableRow>
+
+                            <LinearLayout
+                                    android:id="@+id/button_market"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_right_bottom">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="超市/便利店"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_hospital"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_right_bottom"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="医院"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_bank"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_bottom"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="银行"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <LinearLayout
+                                    android:id="@+id/button_atm"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_right"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ATM"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_mail"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_right"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="快递"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_repair"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="自行车修理"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+-->
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/card_background">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp">
+
+                    <ImageView
+                            android:id="@+id/button_food"
+                            android:layout_width="73dp"
+                            android:layout_height="92dp"
+                            android:scaleType="centerInside"
+                            android:clickable="false"
+                            android:orientation="vertical"
+                            android:src="@drawable/campus_nearby_food"/>
+
+                    <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="0,1"
+                            android:background="@color/control_background"
+                            android:layout_gravity="center_vertical">
+
+                        <TableRow>
+
+                            <LinearLayout
+                                    android:id="@+id/button_campus_restaurant"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="36dp"
+                                    android:paddingBottom="36dp"
+                                    android:background="@drawable/divider_border_right">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="校内餐厅"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_campus_out_restaurant"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="36dp"
+                                    android:paddingBottom="36dp">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="校外餐厅"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/card_background">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp">
+
+                    <ImageView
+                            android:id="@+id/button_entertain"
+                            android:layout_width="73dp"
+                            android:layout_height="92dp"
+                            android:scaleType="centerInside"
+                            android:clickable="false"
+                            android:orientation="vertical"
+                            android:src="@drawable/campus_nearby_entertain"/>
+
+                    <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="0,1,2"
+                            android:background="@color/control_background"
+                            android:layout_gravity="center_vertical">
+
+                        <TableRow>
+
+                            <LinearLayout
+                                    android:id="@+id/button_ktv"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_right_bottom">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="KTV"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_cinema"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_right_bottom"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="电影院"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_cafe"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_bottom"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="咖啡厅"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <LinearLayout
+                                    android:id="@+id/button_supermarket"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_right"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="大型商场"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_hair"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:background="@drawable/divider_border_right"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="美容/理发"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_scene"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    >
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="景点"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/card_background">
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp">
+
+                    <ImageView
+                            android:id="@+id/button_live"
+                            android:layout_width="73dp"
+                            android:layout_height="92dp"
+                            android:scaleType="centerInside"
+                            android:clickable="false"
+                            android:orientation="vertical"
+                            android:src="@drawable/campus_nearby_live"/>
+
+                    <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="0,1"
+                            android:background="@color/control_background"
+                            android:layout_gravity="center_vertical">
+
+                        <TableRow>
+
+                            <LinearLayout
+                                    android:id="@+id/button_fast_hotel"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="36dp"
+                                    android:paddingBottom="36dp"
+                                    android:background="@drawable/divider_border_right">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="快捷酒店"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/button_normal_hotel"
+                                    android:clickable="true"
+                                    android:orientation="vertical"
+                                    android:paddingTop="36dp"
+                                    android:paddingBottom="36dp">
+
+                                <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="普通旅馆"
+                                        android:layout_gravity="center_horizontal"
+                                        
+                                        android:textColor="@color/title_fold"
+                                        android:textSize="15dp"/>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

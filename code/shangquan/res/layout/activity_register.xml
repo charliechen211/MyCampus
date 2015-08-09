@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/register_activity_layout">
+
+        <TabHost
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tabHost">
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"></TabWidget>
+
+                <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <LinearLayout
+                            android:id="@+id/tab1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                        <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:stretchColumns="1">
+
+                            <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:background="@drawable/edit_text_box_item">
+
+                                <TextView
+                                        android:text="用户名"
+                                        android:textSize="20dp"
+                                        android:padding="10dp"
+                                        android:layout_gravity="center_vertical"/>
+
+                                <EditText
+                                        android:layout_width="fill_parent"
+                                        android:background="@android:color/transparent"
+                                        android:layout_gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:id="@+id/username"
+                                        android:inputType="phone"
+                                        android:hint="手机号"
+                                        android:maxWidth="0dp"/>
+                            </TableRow>
+
+                            <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:background="@drawable/edit_text_box_item">
+
+                                <TextView
+                                        android:text="密码"
+                                        android:textSize="20dp"
+                                        android:padding="10dp"
+                                        android:layout_gravity="center_vertical"/>
+
+                                <EditText
+                                        android:layout_width="fill_parent"
+                                        android:background="@android:color/transparent"
+                                        android:id="@+id/password"
+                                        android:inputType="textPassword"
+                                        android:layout_gravity="center_vertical"
+                                        android:maxWidth="0dp"/>
+                            </TableRow>
+
+                            <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:background="@drawable/edit_text_box_item">
+
+                                <TextView
+                                        android:text="确认密码"
+                                        android:textSize="20dp"
+                                        android:padding="10dp"
+                                        android:layout_gravity="center_vertical"/>
+
+                                <EditText
+                                        android:layout_width="fill_parent"
+                                        android:background="@android:color/transparent"
+                                        android:id="@+id/confirm_password"
+                                        android:inputType="textPassword"
+                                        android:layout_gravity="center_vertical"
+                                        android:maxWidth="0dp"/>
+                            </TableRow>
+
+                            <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:background="@drawable/edit_text_box_item">
+
+                                <TextView
+                                        android:text="性别"
+                                        android:textSize="20dp"
+                                        android:padding="10dp"
+                                        android:layout_gravity="center_vertical"/>
+
+                                <RadioGroup
+                                        android:orientation="horizontal"
+                                        android:layout_gravity="center_vertical">
+
+                                    <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/check_boy"
+                                            android:text="男士"/>
+
+                                    <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/check_girl"
+                                            android:text="女士"/>
+                                </RadioGroup>
+                            </TableRow>
+
+                            <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:background="@drawable/edit_text_box_bottom">
+
+                                <TextView
+                                        android:text="年龄"
+                                        android:textSize="20dp"
+                                        android:padding="10dp"
+                                        android:layout_gravity="center_vertical"/>
+
+                                <Spinner
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_gravity="center_vertical"
+                                        android:id="@+id/age"
+                                        android:background="@android:color/transparent"/>
+                            </TableRow>
+                        </TableLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/tab2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                        <TableLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:stretchColumns="1">
+
+                            <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:background="@drawable/edit_text_box_item">
+
+                                <TextView
+                                        android:text="昵称"
+                                        android:textSize="20dp"
+                                        android:padding="10dp"
+                                        android:layout_gravity="center_vertical"/>
+
+                                <EditText
+                                        android:layout_width="fill_parent"
+                                        android:background="@android:color/transparent"
+                                        android:layout_gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:id="@+id/nickname"
+                                        android:inputType="text"
+                                        android:maxWidth="0dp"/>
+                            </TableRow>
+
+                            <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:background="@drawable/edit_text_box_item">
+
+                                <TextView
+                                        android:text="学校"
+                                        android:textSize="20dp"
+                                        android:padding="10dp"
+                                        android:layout_gravity="center_vertical"/>
+
+                                <Spinner
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="@android:color/transparent"
+                                        android:id="@+id/school"/>
+                            </TableRow>
+
+                            <TableRow
+                                    android:layout_width="fill_parent"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:background="@drawable/edit_text_box_item">
+
+                                <TextView
+                                        android:text="校区"
+                                        android:textSize="20dp"
+                                        android:padding="10dp"
+                                        android:layout_gravity="center_vertical"/>
+
+                                <Spinner
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:background="@android:color/transparent"
+                                        android:id="@+id/region"/>
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/edit_text_box_bottom"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                    android:layout_height="fill_parent"
+                                    android:layout_width="wrap_content"
+                                    android:text="标签"
+                                    android:textSize="20dp"
+                                    android:padding="10dp"
+                                    android:layout_gravity="center_vertical"/>
+
+                            <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:orientation="vertical">
+
+                                <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="clip_vertical"
+                                        android:orientation="horizontal">
+
+                                    <EditText
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/edit_text_box_one"
+                                            android:layout_marginLeft="5dp"
+                                            android:id="@+id/tag_content"
+                                            android:layout_toLeftOf="@+id/add"
+                                            android:inputType="text"
+                                            android:singleLine="true"
+                                            android:layout_gravity="center_vertical"
+                                            android:padding="5dp"
+                                            android:maxWidth="0dp"
+                                            android:layout_centerVertical="true"/>
+
+                                    <Button
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:text="+"
+                                            android:layout_gravity="center_vertical"
+                                            android:id="@+id/add"
+                                            android:background="@drawable/button_selector"
+                                            android:layout_toLeftOf="@+id/change"
+                                            android:layout_centerVertical="true"/>
+
+                                    <Button
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="5dp"
+                                            android:text="换"
+                                            android:layout_gravity="center_vertical"
+                                            android:id="@+id/change"
+                                            android:background="@drawable/button_selector"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"/>
+
+                                </RelativeLayout>
+
+                                <com.stpi.campus.components.TagPool
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:id="@+id/tag_container"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/tab3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                                android:id="@+id/footer"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_alignParentBottom="true">
+
+                            <Button
+                                    android:id="@+id/upload_picture"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="选择图片"/>
+
+                            <Button
+                                    android:id="@+id/upload_camera"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="拍摄图片"/>
+                        </LinearLayout>
+
+                        <ImageView
+                                android:id="@+id/picture"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/youlemei"/>
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progress"
+            android:visibility="invisible"/>
+</RelativeLayout>

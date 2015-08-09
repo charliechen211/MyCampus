@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:stretchColumns="0,1"
+            android:background="@color/control_background">
+
+        <TableRow>
+
+            <LinearLayout
+                    android:id="@+id/myCart"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/table_noborder_left_top"
+                    >
+
+                <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/cart"
+                        android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购物车"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/myOrder"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/table_noborder_left_top_right"
+                    >
+
+                <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/order"
+                        android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的订单"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                    android:id="@+id/myQueue"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/table_noborder_left_top">
+
+                <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/queue"
+                        android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的排队"
+                        android:layout_gravity="center_horizontal"
+                        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/myPresent"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/table_noborder_left_top_right"
+                    >
+
+                <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/present"
+                        android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的礼品"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linearLayout1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:gravity="bottom|center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/merchantTab_2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:text="@string/search_note"/>-->
+
+    <!--<SearchView-->
+    <!--android:id="@+id/searchView1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:iconifiedByDefault="true">-->
+    <!--</SearchView>-->
+    <!--</LinearLayout>-->
+
+    <!--<GridLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical" >-->
+
+    <!--<Space-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="48dp" >-->
+    <!--</Space>-->
+
+    <!--<GridLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="10"-->
+    <!--android:columnCount="2"-->
+    <!--android:layoutAnimation="@anim/layout_anim_slide_right"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2" >-->
+
+    <!--<Button-->
+    <!--android:id="@+id/myQueue"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:layout_columnSpan="1"-->
+    <!--android:layout_gravity="fill"-->
+    <!--android:layout_rowSpan="1"-->
+    <!--android:background="#D0FF0000"-->
+    <!--android:shadowColor="#E0000000"-->
+    <!--android:shadowDx="3"-->
+    <!--android:shadowDy="3"-->
+    <!--android:shadowRadius="5"-->
+    <!--android:text="我的排队"-->
+    <!--android:textColor="#FFFFFFFF"-->
+    <!--android:textSize="24sp" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/myCart"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:layout_columnSpan="1"-->
+    <!--android:layout_gravity="fill"-->
+    <!--android:layout_rowSpan="1"-->
+    <!--android:background="#D00000FF"-->
+    <!--android:shadowColor="#E0000000"-->
+    <!--android:shadowDx="3"-->
+    <!--android:shadowDy="3"-->
+    <!--android:shadowRadius="5"-->
+    <!--android:text="我的货车"-->
+    <!--android:textColor="#FFFFFFFF"-->
+    <!--android:textSize="24sp" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/myOrder"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:layout_columnSpan="1"-->
+    <!--android:layout_gravity="fill"-->
+    <!--android:layout_rowSpan="1"-->
+    <!--android:background="#D000FF00"-->
+    <!--android:shadowColor="#E0000000"-->
+    <!--android:shadowDx="3"-->
+    <!--android:shadowDy="3"-->
+    <!--android:shadowRadius="5"-->
+    <!--android:text="我的订单"-->
+    <!--android:textColor="#FFFFFFFF"-->
+    <!--android:textSize="24sp" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/myPresent"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:layout_columnSpan="1"-->
+    <!--android:layout_gravity="fill"-->
+    <!--android:layout_rowSpan="1"-->
+    <!--android:background="#33b5e5"-->
+    <!--android:shadowColor="#E0000000"-->
+    <!--android:shadowDx="3"-->
+    <!--android:shadowDy="3"-->
+    <!--android:shadowRadius="5"-->
+    <!--android:text="我的礼品"-->
+    <!--android:textColor="#FFFFFFFF"-->
+    <!--android:textSize="24sp" />-->
+
+    <!--</GridLayout>-->
+
+    <!--<Space-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="48dp" >-->
+    <!--</Space>-->
+    <!--</GridLayout>-->
+
+</RelativeLayout>

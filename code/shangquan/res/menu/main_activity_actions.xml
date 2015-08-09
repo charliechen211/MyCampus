@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- LeftBotton, should appear as action button -->
+    <item
+            android:id="@+id/action_leftSlide"
+            android:icon="@drawable/ic_action_items"
+            android:layout_gravity="left"
+            android:showAsAction="always"/>
+    <!-- Login, should always be in the overflow -->
+    <item
+            android:id="@+id/action_login"
+            android:icon="@drawable/ic_action_wifi"
+            android:layout_gravity="right"
+            android:showAsAction="always"/>
+</menu>

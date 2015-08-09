@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="18dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:padding="10dp">
+
+    <TextView
+            android:id="@+id/jobTitle"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:text="又招兼职啦！"
+            android:textColor="@color/title_fold"
+            android:textSize="17dp"/>
+
+    <TextView
+            android:id="@+id/jobTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobTitle"
+            android:text="2014年7月27日"
+            android:textColor="@color/minor_fold"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jobTime">
+
+        <TextView
+                android:id="@+id/jobContent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/jobTime"
+                android:layout_marginTop="1dp"
+                android:layout_alignLeft="@id/content"
+                android:text="正在努力地加载中"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </ScrollView>
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_margin="5dp"/>
+
+</RelativeLayout>

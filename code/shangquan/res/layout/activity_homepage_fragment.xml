@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:background="#455a64"
+            android:id="@+id/personInfo">
+
+        <ImageView
+                android:id="@+id/headImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"/>
+
+        <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/headImage"
+                android:layout_alignTop="@id/headImage"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="安娜"/>
+
+        <TextView
+                android:id="@+id/campusName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/headImage"
+                android:layout_below="@id/userName"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:text="闵行校区"/>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignTop="@id/headImage"
+                android:id="@+id/relayout_follow">
+            <TextView
+                    android:id="@+id/followNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15dp"
+                    android:text="12"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/followNum"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="关注"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relayout_followed"
+            android:layout_toLeftOf="@id/relayout_follow"
+            android:layout_marginRight="20dp"
+            android:layout_alignTop="@id/headImage">
+
+        <TextView
+                android:id="@+id/followedNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:text="20"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/followedNum"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="粉丝"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent"
+                  android:layout_width="match_parent"
+                  android:layout_below="@id/personInfo">
+
+        <TabHost
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tabHost">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+
+                <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/common_detail_background"
+                        >
+                </TabWidget>
+
+
+                <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_below="@android:id/tabs"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/recommend_list"
+                            android:divider="@android:color/transparent"
+                            android:background="@android:color/transparent"
+                            android:dividerHeight="15px"/>
+
+                    <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/collection_list"
+                            android:fadingEdge="vertical"
+                            android:divider="@android:color/transparent"
+                            android:background="@android:color/transparent"
+                            android:dividerHeight="15px"/>
+
+<!--                    <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/subscribe_list"
+                            android:divider="@android:color/transparent"
+                            android:background="@android:color/transparent"
+                            android:dividerHeight="15px"/>-->
+
+                </FrameLayout>
+            </RelativeLayout>
+        </TabHost>
+    </LinearLayout>
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_margin="5dp"/>
+</LinearLayout>

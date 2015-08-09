@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.stpi.campus"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+            android:minSdkVersion="14"
+            android:targetSdkVersion="18"/>
+
+    <!--添加可以向外拨打电话的权限  -->
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+    <application
+            android:name="com.stpi.campus.activity.CampusApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/shangshiquan"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ShangQuan">
+
+        <!--百度地图导航API Key-->
+        <!--     <meta-data android:name="com.baidu.lbsapi.API_KEY"
+                        android:value="32C481E2619E63B35EF73AB974F0B409A09BCC6E" />
+             <service
+                 android:name="com.baidu.location.f"
+                 android:enabled="true"
+                 android:process=":remote" >
+             </service>
+           -->
+        <meta-data
+                android:name="com.amap.api.v2.apikey"
+                android:value="4c7d4f77679f6922b681bc7b607ed2ab"/>
+
+
+        <!-- 搜索 -->
+        <activity
+                android:name="com.stpi.campus.activity.personalService.SearchMerchantActivity"
+                android:label="商铺"
+                android:screenOrientation="portrait"/>
+
+        <!-- 排队 -->
+        <activity
+                android:name="com.stpi.campus.activity.merchant.MerchantQueueActivity"
+                android:label="排队"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name="com.stpi.campus.activity.booking.DianActivity"
+                android:label="@string/title_activity_dian"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.personalService.ChangePresentActivity"
+                android:label="换礼品"
+                android:screenOrientation="portrait"/>
+
+        <!-- <activity -->
+        <!-- android:name="com.stpi.shangquan.SlidingMenuActivity" -->
+        <!-- android:label="@string/title_activity_sider_menu" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+                android:name="com.stpi.campus.SplashActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/app_name"
+                android:launchMode="singleInstance"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.stpi.campus.MainActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity
+                android:name="com.stpi.campus.activity.personSetting.LoginActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateVisible">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <!--
+                   <activity
+                    android:name="com.stpi.shangquan.SettingsActivity"
+                    android:label="@string/title_activity_settings" ></activity>
+                </activity>
+        -->
+        <activity
+                android:name="com.stpi.campus.activity.otherService.SearchActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_search"
+                android:screenOrientation="portrait">
+        </activity>
+        <!--        <activity
+                    android:name="com.stpi.shangquan.ItemActivity"
+                    android:configChanges="orientation|keyboardHidden|screenSize"
+                    android:label="item"
+                    android:screenOrientation="portrait" >
+                    <meta-data
+                        android:name="android.support.PARENT_ACTIVITY"
+                        android:value="com.stpi.shangquan.ShoppingActivity" />
+                </activity>-->
+        <activity
+                android:name="com.stpi.campus.AroundActivity"
+                android:label="@string/title_activity_around"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.personSetting.RegisterActivity"
+                android:label="@string/title_activity_register"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="adjustResize|stateVisible">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.merchant.MerchantDetailActivity"
+                android:label="@string/title_activity_merchant_detail"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.item.ItemDetailActivity"
+                android:label="@string/title_activity_item_detail"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.AddCommentActivity"
+                android:label="@string/title_activity_add_comment"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.booking.CartDetailActivity"
+                android:label="@string/title_activity_cart_detail"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.booking.QueueActivity"
+                android:label="@string/title_activity_queue"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.personalService.PersonHomepageActivity"
+                android:label="@string/personHomepage"
+                android:theme="@style/ActionBarTheme_friend"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.notification.SubscribeMerchantActivity"
+                android:label="@string/subscribe_merchant"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.friend.SearchFriendsActivity"
+                android:label="@string/search_friend"
+                android:theme="@style/ActionBarTheme_friend"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.personalService.MyCartActivity"
+                android:label="@string/title_my_cart"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.personalService.MyOrderActivity"
+                android:label="@string/title_my_order"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.merchant.MerchantListActivity"
+                android:label="@string/title_activity_merchant_list"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.shMarket.shCommentActivity"
+                android:label="@string/title_activity_sh_comment_list"
+                android:theme="@style/ActionBarTheme_ShActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.lvBridge.lvCommentActivity"
+                android:label="@string/title_activity_lv_comment_list"
+                android:theme="@style/ActionBarTheme_LvActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.stpi.campus.activity.interactiveWall.InteractiveDetailActivity"
+                android:label="@string/title_interactiveDetailActivity"
+                android:theme="@style/ActionBarTheme_Interactivity"
+                android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.stpi.campus.activity.otherService.SearchStartActivity"/>
+        <activity android:name="com.stpi.campus.activity.personalService.SearchSJTUMerchantActivity"/>
+        <activity android:name="com.stpi.campus.activity.personalService.MapActivity"/>
+        <activity
+                android:name="com.stpi.campus.activity.campusNews.CampusNewsDetailActivity"
+                android:label="@string/title_campus_news"
+                android:theme="@style/ActionBarTheme_CampusNews"
+                />
+        <activity
+                android:name="com.stpi.campus.activity.partTimeJob.PartTimeJobDetailActivity"
+                android:label="@string/title_parttime"
+                android:theme="@style/ActionBarTheme_ParttimeJob"
+                />
+        <activity
+                android:name="com.stpi.campus.util.navigation.NavigateMapActivity"
+                android:label="@string/title_navigate"
+                android:theme="@style/ActionBarTheme_Navigation"/>
+        <activity
+                android:name="com.stpi.campus.activity.personSetting.SelectSchoolActivity"
+                android:label="@string/title_select_school"/>
+        <activity
+                android:name="com.stpi.campus.activity.shMarket.shPublishActivity"
+                android:theme="@style/ActionBarTheme_ShActivity"
+                android:label="@string/title_shPublish"/>
+        <activity
+                android:name="com.stpi.campus.activity.lvBridge.lvPublishActivity"
+                android:theme="@style/ActionBarTheme_LvActivity"
+                android:label="@string/title_lvPublish"/>
+        <activity android:name="com.stpi.campus.activity.partTimeJob.JobPublishActivity"/>
+        <activity
+                android:name="com.stpi.campus.activity.Common.CommentActivity"
+                android:label="@string/title_comment"/>
+        <activity android:name="com.stpi.campus.activity.campusNearby.ItemListActivity"/>
+        <activity android:name="com.stpi.campus.activity.campusNearby.ItemDetailActivity"
+                android:theme="@style/ActionBarTheme_ItemDetailActivity"
+                />
+        <activity android:name="com.stpi.campus.activity.campusNearby.transportation.TransportationActivity"
+                android:theme="@style/ActionBarTheme_transportation"/>
+        <activity android:name="com.stpi.campus.activity.personSetting.ModifyPersonSettingActivity"
+                android:theme="@style/ActionBarTheme_SettingActivity"
+                android:label="@string/modify_person_setting"/>
+    </application>
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+
+    <!--百度地图定位、导航所需权限-->
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE">
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK">
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO">
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS">
+    </uses-permission>
+
+    <!-- 扫一扫 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <supports-screens
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:normalScreens="false"
+            android:resizeable="true"
+            android:smallScreens="true"/>
+
+</manifest>

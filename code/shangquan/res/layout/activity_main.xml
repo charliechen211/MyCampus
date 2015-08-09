@@ -1,0 +1,228 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:gravity="bottom|center"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/merchantTab_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/search_note"/>
+
+        <SearchView
+                android:id="@+id/searchView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="true">
+        </SearchView>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/main_page_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center"
+                android:orientation="vertical">
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"/>
+
+            <GridLayout
+                    android:id="@+id/gridLayoutMainPanel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:columnCount="2"
+                    android:layoutAnimation="@anim/layout_anim_slide_right"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                <Button
+                        android:id="@+id/shopping"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill"
+                        android:layout_rowSpan="1"
+                        android:background="#D0FF0000"
+                        android:shadowColor="#E0000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        android:text="@string/shangquan"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="24sp"/>
+
+                <Button
+                        android:id="@+id/new_found"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill"
+                        android:layout_rowSpan="1"
+                        android:background="#D0F3A710"
+                        android:shadowColor="#E0000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        android:text="@string/new_found"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="24sp"/>
+
+                <Button
+                        android:id="@+id/friends"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill"
+                        android:layout_rowSpan="1"
+                        android:background="#D000FF00"
+                        android:fitsSystemWindows="true"
+                        android:shadowColor="#E0000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        android:text="@string/friends"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="24sp"/>
+
+                <Button
+                        android:id="@+id/park"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill"
+                        android:layout_rowSpan="1"
+                        android:background="#D00000FF"
+                        android:shadowColor="#E0000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        android:text="@string/park"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="24sp"/>
+
+                <Button
+                        android:id="@+id/favorite"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill"
+                        android:layout_rowSpan="1"
+                        android:background="#D0E62231"
+                        android:fitsSystemWindows="true"
+                        android:shadowColor="#E0000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        android:text="@string/favorite"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="24sp"/>
+
+                <Button
+                        android:id="@+id/around"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill"
+                        android:layout_rowSpan="1"
+                        android:background="#F01141E7"
+                        android:fitsSystemWindows="true"
+                        android:shadowColor="#E0000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        android:text="@string/around"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="24sp"/>
+
+                <Button
+                        android:id="@+id/currents"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill"
+                        android:layout_rowSpan="1"
+                        android:background="#D0E71B5F"
+                        android:fitsSystemWindows="true"
+                        android:shadowColor="#E0000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        android:text="@string/currents"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="20sp"/>
+
+                <Button
+                        android:id="@+id/search"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill"
+                        android:layout_rowSpan="1"
+                        android:background="#F05425DF"
+                        android:fitsSystemWindows="true"
+                        android:shadowColor="#E0000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        android:text="@string/probe_search"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="20sp"/>
+            </GridLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="50dp"
+                        android:background="#00FFFFFF"
+                        android:src="@drawable/ic_action_message"/>
+
+                <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="50dp"
+                        android:background="#00FFFFFF"
+                        android:src="@drawable/ic_action_share"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

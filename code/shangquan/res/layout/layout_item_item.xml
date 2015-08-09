@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp">
+
+        <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阿康烧烤"
+                android:textSize="18dp"
+                android:textColor="@color/title_fold"/>
+
+        <TextView
+                android:id="@+id/item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="描述"
+                android:textSize="14dp"
+                android:textColor="@color/minor_fold"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:id="@+id/item_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东川路800号"
+                android:textSize="14dp"
+                android:textColor="@color/minor_fold"
+                android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

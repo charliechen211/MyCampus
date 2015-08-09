@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_box_one">
+
+    <ImageView
+            android:id="@+id/merchant_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    <TextView
+            android:id="@+id/merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="半价桶"
+            android:layout_alignTop="@id/merchant_image"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/merchant_image"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+    <RatingBar
+            android:id="@+id/merchant_ratting"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="5"
+            android:layout_alignLeft="@id/merchant_name"
+            android:layout_below="@id/merchant_name"
+            android:layout_marginTop="5dp"
+            />
+
+
+    <TextView
+            android:id="@+id/merchant_detail_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="具体理由"
+            android:layout_below="@+id/average_cost"
+            android:layout_alignLeft="@id/merchant_ratting"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"/>
+
+    <TextView
+            android:id="@+id/merchant_tag_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:text="随便吃吃"
+            android:layout_below="@+id/average_cost"
+            android:layout_alignLeft="@id/merchant_ratting"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"/>
+
+    <TextView
+            android:id="@+id/merchant_tag_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:text="辣死了"
+            android:layout_alignTop="@+id/merchant_tag_1"
+            android:layout_toRightOf="@+id/merchant_tag_1"
+            android:layout_marginLeft="5dp"/>
+
+    <TextView
+            android:id="@+id/merchant_tag_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TagStyle"
+            android:background="@drawable/tag_style"
+            android:text="太贵了"
+            android:layout_alignBottom="@+id/merchant_tag_1"
+            android:layout_toRightOf="@+id/merchant_tag_2"
+            android:layout_marginLeft="5dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人均65元"
+            android:textSize="13dp"
+            android:id="@+id/average_cost"
+            android:layout_below="@+id/merchant_ratting"
+            android:layout_alignLeft="@+id/merchant_ratting"
+            android:layout_marginTop="5dp"/>
+
+    <!--<TextView-->
+    <!--android:id="@+id/recommend_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="推荐指数"-->
+    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--android:layout_alignTop="@+id/merchant_ratting"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:visibility="invisible"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/merchant_hot"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/recommend_title"-->
+    <!--android:layout_alignRight="@id/recommend_title"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="90"-->
+    <!--android:visibility="invisible"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+    <TextView
+            android:layout_alignTop="@id/merchant_ratting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500米"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/tsuyukusa"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:id="@+id/merchant_distance"/>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_box_one">
+
+    <ImageView
+            android:id="@+id/merchantPicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/kfc_1"/>
+
+    <TextView
+            android:id="@+id/merchantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/merchantPicture"
+            android:layout_toRightOf="@+id/merchantPicture"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="肯德基"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+            android:id="@+id/merchantActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/merchantAverage"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/merchantAverage"
+            android:text="今天全部打9折，大家快来吃啊！！！"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <RatingBar
+            android:id="@+id/merchantRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4.5"
+            android:layout_toRightOf="@id/merchantName"
+            android:layout_alignBottom="@id/merchantName"
+            android:layout_marginLeft="20dp"/>
+
+    <TextView
+            android:id="@+id/merchantAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/merchantRating"
+            android:layout_toRightOf="@+id/merchantPicture"
+            android:text="人均30元"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+</RelativeLayout>

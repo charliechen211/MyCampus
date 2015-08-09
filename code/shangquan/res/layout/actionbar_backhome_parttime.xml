@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:id="@+id/custom_actionbar">
+
+    <ImageButton
+            android:id="@+id/backHome"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="#00000000"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/actionbar_back"/>
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/backHome"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:text=""
+            android:padding="2dp"
+            android:textSize="16dp"/>
+
+        <ImageButton
+                android:id="@+id/collect"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="#00000000"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/actionbar_collect_icon"/>
+
+
+
+</RelativeLayout>

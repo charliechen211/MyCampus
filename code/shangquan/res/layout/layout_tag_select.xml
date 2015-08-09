@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:orientation="vertical"
+              android:layout_margin="5dp">
+
+    <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1,2,3"
+            android:layout_margin="5dp">
+
+        <TableRow>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                <TextView
+                        android:id="@+id/tag1"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="随便吃吃"
+                        android:layout_gravity="center_horizontal"
+                        android:textAppearance="@style/TagStyleBlack"
+                        android:background="@drawable/tag_style1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                <TextView
+                        android:id="@+id/tag2"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="随便吃吃"
+                        android:layout_gravity="center_horizontal"
+                        android:textAppearance="@style/TagStyleBlack"
+                        android:background="@drawable/tag_style2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                <TextView
+                        android:id="@+id/tag3"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="随便吃吃"
+                        android:layout_gravity="center_horizontal"
+                        android:textAppearance="@style/TagStyleBlack"
+                        android:background="@drawable/tag_style3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                <TextView
+                        android:id="@+id/tag4"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="随便吃吃"
+                        android:layout_gravity="center_horizontal"
+                        android:textAppearance="@style/TagStyleWhite"
+                        android:background="@drawable/tag_style4"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                <TextView
+                        android:id="@+id/tag5"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="随便吃吃"
+                        android:layout_gravity="center_horizontal"
+                        android:textAppearance="@style/TagStyleWhite"
+                        android:background="@drawable/tag_style5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                <TextView
+                        android:id="@+id/tag6"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="随便吃吃"
+                        android:layout_gravity="center_horizontal"
+                        android:textAppearance="@style/TagStyleWhite"
+                        android:background="@drawable/tag_style6"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                <TextView
+                        android:id="@+id/tag7"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="随便吃吃"
+                        android:layout_gravity="center_horizontal"
+                        android:textAppearance="@style/TagStyleBlack"
+                        android:background="@drawable/tag_style7"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                <TextView
+                        android:id="@+id/tag8"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="随便吃吃"
+                        android:layout_gravity="center_horizontal"
+                        android:textAppearance="@style/TagStyleWhite"
+                        android:background="@drawable/tag_style8"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

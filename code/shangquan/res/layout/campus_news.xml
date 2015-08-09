@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+
+    <TabHost
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tabHost">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="@color/common_background">
+
+            <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/common_background"
+                    android:layout_below="@android:id/tabs">
+
+                <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/campus_news_list"
+                        android:divider="@color/divider_fold"
+                        android:dividerHeight="1dp"
+                        />
+
+                <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/divider_fold"
+                        android:dividerHeight="1dp"
+                        android:id="@+id/scholar_news_list"
+                        />
+
+                <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/divider_fold"
+                        android:dividerHeight="1dp"
+                        android:id="@+id/department_news_list"
+                        />
+
+                <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/divider_fold"
+                        android:dividerHeight="1dp"
+                        android:id="@+id/topic_news_list"
+                        />
+
+                <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/divider_fold"
+                        android:dividerHeight="1dp"
+                        android:id="@+id/person_news_list"
+                       />
+
+            </FrameLayout>
+
+            <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common_detail_background"
+                    >
+            </TabWidget>
+
+
+        </RelativeLayout>
+    </TabHost>
+
+    <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_margin="5dp"/>
+
+</RelativeLayout>

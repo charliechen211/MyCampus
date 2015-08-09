@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="KFC"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:id="@+id/commentsWrite"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:hint="请输入评论"
+            android:background="@drawable/setbar_bg"/>
+
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:numStars="5"
+            android:rating="0"
+            android:layout_below="@+id/commentsWrite"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"/>
+
+    <EditText
+            android:id="@+id/tagsWrite"
+            android:layout_width="275dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ratingBar"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/setbar_bg"
+            android:hint="请打标签"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addCommentConfirmButton"
+            android:src="@drawable/ic_expand"
+            android:layout_below="@+id/tagsWrite"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentLeft="true"
+            android:text="确认"/>
+
+    <Button
+            android:id="@+id/addTagButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tagsWrite"
+            android:layout_alignRight="@+id/tagsWrite"
+            android:text="+"
+            android:src="@drawable/ic_expand"/>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/homepage_card_background"
+                android:layout_margin="10dp">
+
+    <ImageView
+            android:layout_width="72dp"
+            android:layout_height="90dp"
+            android:scaleType="centerInside"
+            android:id="@+id/moduleName"
+            />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="闵行区校园巴士时刻表"
+            android:id="@+id/title"
+            android:layout_toRightOf="@id/moduleName"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/title_fold"
+            android:textSize="16dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="2014/11/9"
+            android:id="@+id/date"
+            android:textSize="13dp"
+            android:textColor="@color/minor_fold"
+            android:layout_below="@id/title"
+            android:layout_alignLeft="@id/title"
+            />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:layout_below="@id/date"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/title"
+            android:layout_alignBottom="@id/moduleName"
+            android:textColor="@color/minor_fold"
+            android:textSize="13dp"
+            />
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".NavigateMapActivity">
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.amap.api.maps.SupportMapFragment"/>
+
+        <LinearLayout
+                android:id="@+id/LinearLayoutLayout_index_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom|center_horizontal"
+                android:visibility="gone">
+
+            <ImageButton
+                    android:id="@+id/pre_index"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_route_pre"/>
+
+            <ImageButton
+                    android:id="@+id/next_index"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_route_next"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@color/common_background"
+            android:orientation="vertical">
+
+        <!-- title -->
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/menu_navigation_background"
+                android:visibility="gone">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/activity_title_home"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:padding="1dp">
+
+            <TextView
+                    android:id="@+id/schoolText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="校区:"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"/>
+
+            <TextView
+                    android:id="@+id/school"
+                    android:layout_toRightOf="@id/schoolText"
+                    android:text="上海交通大学闵行校区"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/common_menu_background"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"/>
+
+            <Button
+                    android:id="@+id/selectSchool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/school"
+                    android:text="选择校区"
+                    android:background="@drawable/button_bar_selector"/>
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:baselineAligned="true"-->
+        <!--android:gravity="right"-->
+        <!--android:padding="1dp" >-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="1dp"-->
+        <!--android:background="@drawable/transparent"-->
+        <!--android:baselineAlignBottom="true"-->
+        <!--android:contentDescription="@string/search_bar_zoom"-->
+        <!--android:padding="1dp"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@drawable/btn_search_bar_zoom" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/edit_text_search_bar_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_marginBottom="1dp"-->
+        <!--android:layout_marginLeft="1dp"-->
+        <!--android:layout_marginRight="1dp"-->
+        <!--android:layout_marginTop="1dp"-->
+        <!--android:hint="@string/search_bar_search_content"-->
+        <!--android:paddingBottom="1dp"-->
+        <!--android:singleLine="true" />-->
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/btn_search_bar_submit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="1dp"-->
+        <!--android:background="@drawable/transparent"-->
+        <!--android:baselineAlignBottom="true"-->
+        <!--android:contentDescription="@string/search_bar_submit"-->
+        <!--android:padding="1dp"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@drawable/btn_search_bar_submit" />-->
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/btn_search_bar_wifi"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginLeft="1dp"-->
+        <!--android:layout_marginRight="1dp"-->
+        <!--android:background="@drawable/transparent"-->
+        <!--android:baselineAlignBottom="true"-->
+        <!--android:contentDescription="@string/search_bar_wifi"-->
+        <!--android:padding="1dp"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@drawable/btn_search_bar_wifi" />-->
+        <!--</LinearLayout>-->
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+            <com.stpi.campus.components.switcher.GuideGallery
+                    android:id="@+id/image_wall_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:fadingEdge="none"
+                    android:spacing="1dip"
+                    android:unselectedAlpha="1">
+            </com.stpi.campus.components.switcher.GuideGallery>
+
+            <LinearLayout
+                    android:id="@+id/gallery_point_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_wall_gallery"
+                    android:alpha="0.5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- btn -->
+
+        <LinearLayout
+                android:id="@+id/linear_layout_btn_container"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+            <!-- first line -->
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                <ImageView
+                        android:id="@+id/btn_navigation_food"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_navigation_food"/>
+
+                <ImageView
+                        android:id="@+id/btn_navigation_around"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_navigation_around"/>
+
+                <ImageView
+                        android:id="@+id/btn_navigation_interactive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_navigation_interactive"/>
+
+                <ImageView
+                        android:id="@+id/btn_navigation_lv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_navigation_lv"/>
+            </LinearLayout>
+            <!-- second line -->
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                <ImageView
+                        android:id="@+id/btn_navigation_nav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_navigation_nav"/>
+
+                <ImageView
+                        android:id="@+id/btn_navigation_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_navigation_news"/>
+
+                <ImageView
+                        android:id="@+id/btn_navigation_sh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_navigation_sh"/>
+
+                <ImageView
+                        android:id="@+id/btn_navigation_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_navigation_work"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

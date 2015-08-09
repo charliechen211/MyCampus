@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">我的大学</string>
+    <string name="action_settings">设置</string>
+    <string name="shangquan">逛商圈</string>
+    <string name="friends">交朋友</string>
+    <string name="park">找停车</string>
+    <string name="new_found">今日推荐</string>
+    <string name="title_activity_shopping">逛大街</string>
+    <string name="wifi">WiFi</string>
+    <string name="title_activity_star_found">今日推荐</string>
+    <string name="title_activity_parking">找停车</string>
+    <string name="title_activity_friends">搜朋友</string>
+    <string name="title_activity_play">嘻哈玩</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="search_note">任我搜</string>
+    <string name="title_activity_search">任我搜</string>
+    <string name="more_button">更多...</string>
+    <string name="title_activity_sider_menu">SiderMenuActivity</string>
+    <string name="leftMenuDesc">show left menu</string>
+    <string name="exit_whether_or">Whether Exit or Not?</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_favorite">我的收藏</string>
+    <string name="title_activity_around">动态</string>
+    <string name="favorite">我的收藏</string>
+    <string name="around">动态</string>
+    <string name="title_activity_clothing">ClothingActivity</string>
+    <string name="shopping_clothing">服装</string>
+    <string name="shopping_food">餐饮</string>
+    <string name="shopping_entertainment">娱乐</string>
+    <string name="shopping_ad">广告</string>
+    <string name="prompt_confirm">密码确认</string>
+    <string name="action_register">注册</string>
+    <string name="img_content_ads">广告</string>
+    <string name="process_text_text">正在载入...</string>
+    <string name="title_activity_merchant_list">看商家</string>
+    <string name="title_activity_merchant_detail">商家详情</string>
+    <string name="title_activity_item_detail">商品详情</string>
+    <string name="title_activity_dian">菜单</string>
+    <string name="title_activity_add_comment">加评论</string>
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_cart_detail">购物车</string>
+    <string name="title_activity_queue">我的队伍</string>
+    <string name="settings">设置</string>
+    <string name="personHomepage"></string>
+    <string name="subscribe_merchant">订阅商家</string>
+    <string name="subscribe_setting">订阅设置</string>
+    <string name="search_friend">搜索好友</string>
+    <string name="nearby_merchant">附近商铺</string>
+    <string name="title_search">搜索</string>
+    <string name="title_change_present">换礼品</string>
+    <string name="title_news_list">商圈最新闻</string>
+    <string name="title_my_cart">我的购物车</string>
+    <string name="title_my_order">我的订单</string>
+    <string name="activity_title_home">环校通</string>
+    <string name="search_bar_zoom">放大镜</string>
+    <string name="search_bar_submit">启发式搜索</string>
+    <string name="search_bar_search_content">搜索关键字</string>
+    <string name="search_bar_wifi">wifi</string>
+    <string name="splash">欢迎</string>
+    <string name="title_interactiveDetailActivity">秘密详情</string>
+    <string name="title_activity_sh_comment_list">二手市场</string>
+    <string name="title_activity_lv_comment_list">鹊桥相会</string>
+    <string name="title_select_school">选择校区</string>
+    <string name="title_campus_news">校园资讯</string>
+    <string name="title_parttime">兼职招聘</string>
+    <string name="title_navigate">导航详情</string>
+    <string name="title_shPublish">发布二手信息</string>
+    <string name="title_lvPublish">发布鹊桥信息</string>
+    <string name="collect_title">收藏</string>
+    <string name="add_item">发帖</string>
+    <string name="confirm">确认</string>
+    <string name="title_comment">发表评论</string>
+    <string name="modify_person_setting">设置</string>
+    <string-array name="transportation_spinner">
+        <item>地铁</item>
+        <item>公交</item>
+        <item>校园巴士</item>
+        <item>跨校区校车</item>
+    </string-array>
+    <string-array name="service_spinner">
+        <item>超市/便利店</item>
+        <item>医院</item>
+        <item>银行</item>
+        <item>ATM</item>
+        <item>快递</item>
+        <item>自行车修理</item>
+    </string-array>
+
+    <string-array name="food_spinner">
+        <item>校内餐厅</item>
+        <item>校外餐厅</item>
+    </string-array>
+
+    <string-array name="entertain_spinner">
+        <item>KTV</item>
+        <item>电影院</item>
+        <item>咖啡厅</item>
+        <item>大型商场</item>
+        <item>美容理发</item>
+        <item>景点</item>
+    </string-array>
+
+    <string-array name="living_spinner">
+        <item>快捷酒店</item>
+        <item>普通旅馆</item>
+    </string-array>
+
+</resources>

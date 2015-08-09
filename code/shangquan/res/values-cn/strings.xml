@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">商圈</string>
+    <string name="title_note">现在就来嘻哈一下</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="shangquan">逛商圈</string>
+    <string name="friends">交朋友</string>
+    <string name="park">找停车</string>
+    <string name="new_found">今日推荐</string>
+    <string name="title_activity_shopping">逛大街</string>
+    <string name="wifi">WiFi</string>
+    <string name="title_activity_star_found">今日推荐</string>
+    <string name="title_activity_parking">找停车</string>
+    <string name="title_activity_friends">搜朋友</string>
+    <string name="title_activity_play">嘻哈玩</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="game_content">游戏\n任你选</string>
+    <string name="play_content">想玩那个\n都可以</string>
+    <string name="play">嘻哈玩</string>
+    <string name="game">爱游戏</string>
+    <string name="search_note">任我搜</string>
+    <string name="title_activity_game">游戏</string>
+    <string name="parking_note">停车就选天安门</string>
+    <string name="find_friends">有图有真相</string>
+    <string name="note_shopping">亲，新世界城7楼打折了，买300送300</string>
+    <string name="probe_search">探索式搜索</string>
+    <string name="currents">个性服务</string>
+    <string name="title_activity_search">任我搜</string>
+    <string name="search_content">探索式\n搜索</string>
+    <string name="more_button">更多...</string>
+    <string name="title_activity_currents">个性化推荐</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_sider_menu">SiderMenuActivity</string>
+    <string name="leftMenuDesc">show left menu</string>
+    <string name="exit_whether_or">是否退出t?</string>
+    <string name="OK">好</string>
+    <string name="cancel">取消</string>
+    <string name="favorite">我的收藏</string>
+    <string name="around">周围动态</string>
+    <string name="login">登陆</string>
+</resources>
